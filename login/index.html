@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -165,33 +165,36 @@
 </head>
 
 <body>
-    <div class="form-container">
-        <p class="title">Login</p>
-
+    <form >
+        <div class="form-container">
+            <p class="title">Login</p>
+        
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" class="inp" placeholder="" oninput="refer()">
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="inp"placeholder="" oninput="refer()">
+                <input type="password" name="password" id="password" class="inp" placeholder="" oninput="refer()">
                 <div class="forgot">
                     <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                 </div>
             </div>
-            <button class="sign" onclick="validate()">Sign in</button>
-
-        <div class="social-message">
-            <div class="line"></div>
-            <p class="message">Login with social accounts</p>
-            <div class="line"></div>
+            <button class="sign" onclick="validate(event)">Sign in</button>
+        
+            <div class="social-message">
+                <div class="line"></div>
+                <p class="message">Login with social accounts</p>
+                <div class="line"></div>
+            </div>
+        
+            <p class="signup">Don't have an account?
+                <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+            </p>
         </div>
-
-        <p class="signup">Don't have an account?
-            <a rel="noopener noreferrer" href="#" class="">Sign up</a>
-        </p>
-    </div>
+    </form>
     <script src="script.js"></script>
 </body>
 
-</html>
+</html> 
+
